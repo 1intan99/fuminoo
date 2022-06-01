@@ -14,7 +14,7 @@ module.exports = {
     .addField('Available Filters', filters.map(x => `\`${x}\``).join(', '))
     const queue = client.distube.getQueue(message)
     if (!queue) return message.channel.send(`${client.emotes.error} | There is nothing in the queue right now!`)
-    if (!args) return message.channel.send(`Please input the filters!`)
+    if (!args) return message.channel.send({ embeds: [error] });
     if (!filters.includes(args)) return message.channel.send({ embeds: [error] })
     if (args[0] === 'off' && queue.filters?.length) queue.setFilter(false)
     else if (Object.keys(client.distube.filters).includes(args[0])) queue.setFilter(args[0])
