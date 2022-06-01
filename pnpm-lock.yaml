@@ -8,6 +8,7 @@ specifiers:
   '@distube/yt-dlp': ^0.0.2
   discord.js: ^13.6.0
   distube: ^3.3.1
+  dotenv: ^16.0.1
   eslint: ^8.8.0
   eslint-config-prettier: ^8.3.0
   eslint-config-standard: ^17.0.0-0
@@ -29,6 +30,7 @@ dependencies:
   libsodium-wrappers: 0.7.10
 
 devDependencies:
+  dotenv: 16.0.1
   eslint: 8.16.0
   eslint-config-standard: 17.0.0_emhlgvnnzfhdyxdbdqm6jugvsi
   eslint-plugin-import: 2.26.0_eslint@8.16.0
@@ -642,6 +644,11 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       esutils: 2.0.3
+
+  /dotenv/16.0.1:
+    resolution: {integrity: sha512-1K6hR6wtk2FviQ4kEiSjFiH5rpzEVi8WW0x96aztHVMhEspNpc4DVOUTEHtEva5VThQ8IaBX1Pe4gSzpVVUsKQ==}
+    engines: {node: '>=12'}
+    dev: true
 
   /emoji-regex/8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
